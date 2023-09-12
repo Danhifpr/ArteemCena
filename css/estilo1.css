@@ -1,20 +1,23 @@
 body{    
     height: 100%;
     margin: 0;
-    font-size: 18px;
+    font-size: 15px;
     color: #272d4d;
     background-color: #FFE538;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
     position: relative;
     background-image: url("/Arteemcena/img/fundo.jpg");
-    background-attachment: scroll;
+    background-attachment: fixed;
     background-position: center;
-    background-size: cover;  
+    background-size: cover;
+
+    overflow-x: hidden;
 }
 
 header {
     background-color: black;
     margin: -10px -20px 0 -20px;
+    padding-top: 1%;
     text-align: center;
 } 
 
@@ -64,7 +67,7 @@ header {
 footer{
     text-align: center;
     background-color: whitesmoke;
-    margin: 0px -20px -30px -10px;
+    margin: 0px -20px -30px -20px;
     padding: 15px 0;
 
 }
@@ -114,9 +117,10 @@ footer{
 
 .imagem{
     text-align: center;
-    margin: 0 0 -5px 0;
-
-    
+    margin: 0 0 -5px 0;    
+}
+.acoes{
+    width: 90%;
 }
 
 .brecho{
