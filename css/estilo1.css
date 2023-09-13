@@ -6,7 +6,7 @@ body{
     background-color: #FFE538;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
     position: relative;
-    background-image: url("/Arteemcena/img/fundo.jpg");
+    background-image: url("../img/fundo.jpg");
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
