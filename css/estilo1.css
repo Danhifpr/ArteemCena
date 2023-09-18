@@ -1,12 +1,18 @@
-body{    
+html, body{
+    width: 100%;
+    max-width: 100vw;
     height: 100%;
     margin: 0;
+    padding: 0;
+}
+
+body{
     font-size: 15px;
     color: #272d4d;
     background-color: #FFE538;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
     position: relative;
-    background-image: url("../img/fundo.jpg");
+    background-image: url("/Arteemcena/img/fundo.jpg");
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -16,7 +22,7 @@ body{
 
 header {
     background-color: black;
-    margin: -10px -20px 0 -20px;
+    margin: -10px 0 0 0;
     padding-top: 1%;
     text-align: center;
 } 
@@ -67,7 +73,7 @@ header {
 footer{
     text-align: center;
     background-color: whitesmoke;
-    margin: 0px -20px -30px -20px;
+    margin: 0px 0 -30px 0;
     padding: 15px 0;
 
 }
@@ -78,12 +84,13 @@ footer{
 }
 
 .instagrampequeno{
-    width: 50px;
+    width: 40px;
 }
 
 .divisoes{
     display: flex;
     flex-direction: row;
+    text-align: center;
 }
 
 .bloco{
@@ -116,8 +123,7 @@ footer{
 }
 
 .imagem{
-    text-align: center;
-    margin: 0 0 -5px 0;    
+    text-align: center;    
 }
 .acoes{
     width: 90%;
@@ -125,7 +131,6 @@ footer{
 
 .brecho{
     background-color: black;
-    margin: 0 -20px;
 }
 
 .opacidade{
@@ -137,22 +142,19 @@ p{
 }
 
 .texto{
-    margin: 0 -20px ;
     padding: 20px 40px;
     padding-top: 0;
     text-align: center;
 }
 
 .texto1{
-    margin: 0 -20px ;
-    padding: 20px 40px;
-    padding-top: 0;
+    padding: 10px 20px;
     text-align: center;
     background-color: whitesmoke;
 }
 
 .texto2{
-    margin: 20px -20px ;
+    margin: 20px 0;
     padding: 10px 30px;
     text-align: center;
     background-color: whitesmoke;
@@ -186,10 +188,45 @@ h1{
     
 }
 
-@media screen and (max-width:1250px){
-    .divisoes, .bloco{
+@media screen and (max-width:900px){    
+    body{
         width: 100%;
+    }
+
+    .mobile{
+        width: 100vw;
+        text-align: center;
+    }
+
+    .bloco{
+        width: 99%;
         flex-direction: column;
     }
-}
+    
+    .divisoes{
+        width: 99%;
+        flex-direction: column;
+    }
 
+    header{
+        padding-top: 4vw;
+    }
+
+    .selecao, .links,.spancima{
+        bottom: 9vw;
+        font-size: 4vw;
+    }
+
+    .logo{
+        width: 20vw;
+    }
+
+    .titulo{
+        margin: 0 10%;
+        font-size: 6vw;
+    }
+
+    .destaque{
+        font-size: 5vw;
+    }    
+}
