@@ -186,10 +186,51 @@ h1{
     
 }
 
-@media screen and (max-width:1250px){
-    .divisoes, .bloco{
+@media screen and (max-width:900px){    
+    body{
         width: 100%;
+    }
+
+    .mobile{
+        width: 100vw;
+        text-align: center;
+    }
+
+    .bloco{
+        width: 99%;
         flex-direction: column;
+    }
+    
+    .divisoes{
+        width: 99%;
+        flex-direction: column;
+    }
+
+    header{
+        padding-top: 4vw;
+    }
+
+    .selecao, .links,.spancima{
+        bottom: 9vw;
+        font-size: 4vw;
+    }
+
+    .logo{
+        width: 20vw;
+    }
+
+    .titulo{
+        margin: 0 10%;
+        font-size: 6vw;
+    }
+
+    .destaque{
+        font-size: 5vw;
+    }   
+    
+    .links:hover{
+        color: #ff2929;
+        bottom: 9.5vw;
     }
 }
 
